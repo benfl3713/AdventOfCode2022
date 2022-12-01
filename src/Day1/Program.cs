@@ -1,7 +1,8 @@
-﻿using Day1;
+﻿using Common;
+using Day1;
 
 Console.WriteLine("Part1:");
-Part1.Run();
+PartRunner.RunWithTimer(Part1.Run);
 
 Console.WriteLine("\nPart2:");
-Part2.Run();
+PartRunner.RunWithTimer(Part2.Run);
