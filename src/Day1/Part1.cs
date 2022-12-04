@@ -16,13 +16,17 @@ public static class Part1
             else
                 CurrentElvesCalories.Add(Convert.ToInt32(row));
         }
+        
+        // Handles last elf if no end blank line provided
+        if (CurrentElvesCalories.Any())
+            SetIsHighestElf();
 
         Console.WriteLine(_highestCalories);
     }
 
-    static void SetIsHighestElf()
+    private static void SetIsHighestElf()
     {
-        var total = CurrentElvesCalories.Sum();
+        int total = CurrentElvesCalories.Sum();
 
         if (total > _highestCalories)
             _highestCalories = total;
