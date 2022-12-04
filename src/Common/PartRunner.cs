@@ -11,6 +11,6 @@ public static class PartRunner
         part.Invoke();
         
         timer.Stop();
-        Console.WriteLine("Took: " + timer.Elapsed);
+        Console.WriteLine("Took: " + timer.Elapsed + "\n");
     }
 }
